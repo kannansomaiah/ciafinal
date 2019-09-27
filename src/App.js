@@ -14,7 +14,13 @@ class App extends Component {
     return (
         <div className="container">
           <Header />
-          <body />
+          <Router>
+            <Home path='/'/>
+            <Instruction path='/instruction'/>
+            <Contactus path='/contactus'/>
+            <Login path='/login'/>
+            <Register path='/register'/>
+        </Router>
           <Footer />
         </div>
     );
